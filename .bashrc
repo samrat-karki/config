@@ -6,6 +6,25 @@
 [[ $- != *i* ]] && return
 
 
+# Set the default editor
+
+export EDITOR=nano
+
+
+# Expand the history size
+export HISTFILESIZE=10000
+export HISTSIZE=500
+
+# Don't put duplicate lines in the history and do not add lines that start with a space
+export HISTCONTROL=erasedups:ignoredups:ignorespace
+
+# Check the window size after each command and, if necessary, update the values of LINES and COLUMNS
+shopt -s checkwinsize
+
+# Causes bash to append to history instead of overwriting it so if you start a new terminal, you have old session history
+shopt -s histappend
+
+
 # bash aliases
 
 alias ls='ls --color=auto' 
@@ -30,7 +49,7 @@ alias rm='rm -i'
 alias df='df -h'                          
 alias free='free -m'
 alias grep='grep --color=auto'
-alias code='vscodium'
+alias ping='ping -c 5'
 
 
 # git aliases
@@ -45,7 +64,9 @@ alias gb="git branch"
 # shortcuts
 
 alias c='clear'
+alias q='exit'
 alias h='history'
+alias code='vscodium'
 alias ports='sudo netstat -tulanp'
 
 
@@ -74,7 +95,12 @@ alias rm='rm -i'
 # adding flags
 
 alias df='df -h'
-alias free='free -h'                      
+alias free='free -h'  
+
+
+# gnome specfic 
+
+alias out='gnome-session-quit --logout --no-prompt'
 
 
 # get current branch in git repos
@@ -109,7 +135,7 @@ multiline_prompt
 # ipconfig 
 
 function ipconfig() {
-ifconfig | grep -m1 "inet addr" | awk '{print $2}' | awk -F: '{print $2}'
+ifconfig wlo1 | grep -m1 "inet addr" | awk '{print $2}' | awk -F: '{print $2}'
 }
 
 
