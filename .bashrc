@@ -108,23 +108,21 @@ multiline_prompt
 
 # ipconfig 
 
-function ipconfig(){
-
+function ipconfig() {
 ifconfig | grep -m1 "inet addr" | awk '{print $2}' | awk -F: '{print $2}'
-
 }
 
 
 # kill port 
 
-function kill(){
+function kill() {
   fuser --kill "$1"/tcp
 }
 
 
 # Extract any archive
 
-extract () {
+function extract() {
 	for archive in $*; do
 		if [ -f $archive ] ; then
 			case $archive in
