@@ -3,7 +3,7 @@
   "explorer.compactFolders": false,
 
   "editor.minimap.enabled": false,
-  "editor.mouseWheelZoom": true,
+  "editor.mouseWheelZoom": false,
   "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
 
@@ -15,7 +15,7 @@
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.fontSize": 16,
-  "workbench.commandPalette.history": 10,
+  "terminal.integrated.enablePersistentSessions": false,
 
   "workbench.colorTheme": "Noctis",
   "workbench.iconTheme": "material-icon-theme",
@@ -24,6 +24,7 @@
   "workbench.startupEditor": "none",
 
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.disableAutomaticTypeAcquisition": true,
   "typescript.check.npmIsInstalled": true,
   "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
   "[jsonc]": {
@@ -65,5 +66,20 @@
   "editor.guides.highlightActiveBracketPair": true,
   "editor.guides.indentation": true,
   "editor.autoIndent": "advanced",
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+
+  "security.workspace.trust.enabled": false,
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true
+  }
 }
