@@ -3,7 +3,9 @@
   "explorer.compactFolders": false,
 
   "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
   "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
 
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": false,
@@ -13,30 +15,36 @@
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.fontSize": 16,
+  "workbench.commandPalette.history": 10,
 
   "workbench.colorTheme": "Noctis",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {},
   "workbench.editor.tabSizing": "fit",
   "workbench.startupEditor": "none",
-  "window.zoomLevel": 1,
 
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.check.npmIsInstalled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    }
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.dragAndDrop": true,
+  "editor.bracketPairColorization.enabled": true,
+  "prettier.printWidth": 95,
   "prettier.semi": false,
+  "prettier.trailingComma": "es5",
+  "prettier.withNodeModules": false,
 
+  "editor.formatOnSave": true,
   "totalTypeScript.hideAllTips": false,
   "totalTypeScript.hideBasicTips": false,
   "importCost.bundleSizeDecoration": "minified",
@@ -56,5 +64,6 @@
   "editor.guides.bracketPairs": "active",
   "editor.guides.highlightActiveBracketPair": true,
   "editor.guides.indentation": true,
-  "editor.autoIndent": "advanced"
+  "editor.autoIndent": "advanced",
+  "window.zoomLevel": 1
 }
