@@ -64,6 +64,9 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
 alias gb="git branch"
+alias gp="git push"
+alias gi="git init"
+alias gca="git commit --amend --no-edit"
 
 
 # shortcuts
@@ -124,7 +127,8 @@ function multiline_prompt() {
     ORANGE='\[\033[38;5;202m\]'
     RESET='\[\033[00m\]'
     
-    MODLINE="(${GREEN}\u@\h${RESET})-[${BLUE}\w${RESET}]${ORANGE}\`git_branch\`${RESET}"
+#   MODLINE="(${GREEN}\u@\h${RESET})-[${BLUE}\w${RESET}]${ORANGE}\`git_branch\`${RESET}"
+	MODLINE="${GREEN}[${BLUE}\w${GREEN}]${ORANGE}\`git_branch\`${RESET}"
 export PS1="┌──$MODLINE        
 └─\$ "
 }
