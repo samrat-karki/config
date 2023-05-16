@@ -9,7 +9,7 @@
 
 # Set the default editor
 
-export EDITOR=nano
+export EDITOR=codium
 
 
 # Expand the history size
@@ -105,6 +105,9 @@ alias rm='rm -i'
 alias df='df -h'
 alias free='free -h'  
 
+# better rm
+
+alias rb='mv --force ~/.local/share/Trash/files/'
 
 # gnome specfic 
 
@@ -154,6 +157,12 @@ function kill() {
   fuser --kill "$1"/tcp
 }
 
+# easy git
+ 
+function gg()	{
+	git add . && git commit -m "$1" && git push
+}
+
 
 # Extract any archive
 
@@ -179,3 +188,7 @@ function extract() {
 		fi
 	done
 }
+
+# god's aliases
+
+alias fuck='sudo $(fc -ln -1)'
