@@ -1,85 +1,53 @@
 {
   "breadcrumbs.enabled": false,
   "explorer.compactFolders": false,
-
   "editor.minimap.enabled": false,
-  "editor.mouseWheelZoom": false,
   "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
-
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontLigatures": false,
-  "editor.fontSize": 17,
-  "editor.fontWeight": "normal",
-
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.lineHeight": 1.1,
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.enablePersistentSessions": false,
-
-  "workbench.colorTheme": "Noctis",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorCustomizations": {},
-  "workbench.editor.tabSizing": "fit",
-  "workbench.startupEditor": "none",
-
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.disableAutomaticTypeAcquisition": true,
-  "typescript.check.npmIsInstalled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true
-    }
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.dragAndDrop": true,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "file-icons",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.emptyWindow": false,
+  "security.workspace.trust.banner": "never",
+  "editor.fontFamily": "Iosevka Expanded",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 21,
+  "editor.fontWeight": "normal",
   "editor.bracketPairColorization.enabled": true,
-  "prettier.printWidth": 95,
-  "prettier.semi": false,
-  "prettier.trailingComma": "es5",
-  "prettier.withNodeModules": false,
-
   "editor.formatOnSave": true,
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": false,
-  "importCost.bundleSizeDecoration": "minified",
-  "importCost.javascriptExtensions": ["\\.jsx?$"],
-  "importCost.showCalculatingDecoration": false,
-  "importCost.typescriptExtensions": ["\\.tsx?$"],
-  "javascript.updateImportsOnFileMove.enabled": "always",
-
-  "material-icon-theme.folders.associations": {
-    "user": "admin",
-    "entities": "database"
-  },
-
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-
   "editor.guides.bracketPairs": "active",
   "editor.guides.highlightActiveBracketPair": true,
-  "editor.guides.indentation": true,
-  "editor.autoIndent": "advanced",
-  "window.zoomLevel": 1,
-
-  "security.workspace.trust.enabled": false,
-
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/*.code-search": true
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[env]": {
+    "editor.defaultFormatter": "IronGeek.vscode-env"
   },
-
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/dist/**": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/yarn.lock": true
+  },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/*/**": true,
     "**/.hg/store/**": true
-  }
+  },
+  "files.associations": {
+    "*.env.*": "env"
+  },
+  "telemetry.telemetryLevel": "off"
 }
